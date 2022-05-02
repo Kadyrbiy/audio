@@ -1,0 +1,73 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background: black;
+   color: white;
+}
+.wrapper {
+   height: 100vh;
+   width: 900px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.player  {
+   // width: 755px;
+   // border: white solid 3px;
+   // padding: 5px 10px 5px 10px;
+   .cover {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: white solid 3px;
+      float: left;
+   }
+   .song {
+      margin: 5px 0 5px 10px;
+      font-size: 23px;
+      line-height: 28px;
+      display: flex;
+      float: left;
+   }
+   .progress__container {
+      margin: 15px 0 0 20px ;
+      background: none;
+      border: white solid 3px;
+      border-radius: 5px;
+      width: 500px;
+      height: 10px;
+      cursor: pointer;
+      float: left;
+      align-items: center; 
+      .progress {
+         background: rgb(221,34,225);
+         background: linear-gradient(164deg, rgba(221,34,225,0.7) 0%, rgba(15,114,153,0.7) 65%, rgba(255,255,255,0.7) 100%);
+         border-radius: 5px;
+         height: 6px;
+         float: left;
+         margin: -1px 0 0 0;
+      }
+   }
+   .buttons {
+      float: left;
+      .btn {
+         cursor: pointer;
+      }
+      .play {
+         margin: 5px 0 0 15px;
+         float: left;
+         .img-src {
+            background: white;
+            border-radius: 100%;
+            border: none;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+         }
+      }
+   }
+   
+}
